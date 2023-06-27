@@ -172,13 +172,24 @@ sumar(7,5)
 
 #Imprime el valor devuelto de una función que al pasarle como parámetro una lista de números devuelva la suma de todos los números pares.
 
-def sumar_pares(lista_numeros):
+# def sumar_pares(lista_numeros):
+#     suma = 0
+#     for i in lista_numeros:
+#         if i % 2 == 0:
+#             suma += i
+#     return suma
+
+# numeros = [1,2,3,4,5]
+# resultado = sumar_pares(numeros)
+# print(resultado)
+
+def sumar_pares():
     suma = 0
-    for i in lista_numeros:
+    numeros = [1,2,3,4,5]
+    
+    for i in numeros:
         if i % 2 == 0:
             suma += i
-    return suma
+        return i
+sumar_pares()
 
-numeros = [1,2,3,4,5]
-resultado = sumar_pares(numeros)
-print(resultado)
